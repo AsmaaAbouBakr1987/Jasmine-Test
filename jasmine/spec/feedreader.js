@@ -65,6 +65,9 @@ $(function() {
           * clicked and does it hide when clicked again.
           */
 
+    describe('The menu', function() {
+        
+    });
     /* TODO: Write a new test suite named "Initial Entries" */
 
         /* TODO: Write a test that ensures when the loadFeed
