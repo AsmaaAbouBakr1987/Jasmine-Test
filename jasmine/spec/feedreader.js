@@ -101,7 +101,7 @@ $(function() {
         });
 
         it('when the loadFeed function is called and completes its work, the feed container is not empty', function() {
-            let entries = document.querySelectorAll('a.entry-link');
+            let entries = document.querySelectorAll('div.entry');
             expect(entries.length).toBeGreaterThan(0);
         });
     });
