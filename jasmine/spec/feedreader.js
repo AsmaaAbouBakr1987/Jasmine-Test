@@ -69,6 +69,15 @@ $(function() {
         it('The menu is hidden by default', function() {
             expect(document.body.classList.contains('menu-hidden')).toBe(true);
         });
+
+        it('the menu changes visibility when the menu icon is clicked', function() {
+            let menuClicked = document.querySelector('a.menu-icon-link');
+            menuClicked.click();
+            expect(document.body.classList.contains('menu-hidden')).not.toBe(true);
+            menuClicked.click();
+            expect(document.body.classList.contains('menu-hidden')).toBe(true);
+        });
+
     });
     /* TODO: Write a new test suite named "Initial Entries" */
 
