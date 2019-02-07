@@ -95,6 +95,15 @@ $(function() {
          * Remember, loadFeed() is asynchronous.
          */
     describe('Initial Entries', function() {
-        
+
+        beforeEach(function(done){
+            loadFeed(1, done);
+        });
+
+        it('when the loadFeed function is called and completes its work, the feed container is not empty', function() {
+            let entries = document.querySelectorAll('a.entry-link');
+            expect(entries.length).toBeGreaterThan(0);
+        });
     });
+
 }());
