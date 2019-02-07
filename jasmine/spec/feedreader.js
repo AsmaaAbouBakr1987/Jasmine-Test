@@ -66,7 +66,9 @@ $(function() {
           */
 
     describe('The menu', function() {
-        
+        it('The menu is hidden by default', function() {
+            expect(document.body.classList.contains('menu-hidden')).toBe(true);
+        });
     });
     /* TODO: Write a new test suite named "Initial Entries" */
 
